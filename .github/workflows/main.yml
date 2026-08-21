@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: instarar .net 3.5
-        uses: actions/setup-donet@v4
+        uses: actions/setup-dotnet@v4
         with:
           donet-version:${{env.DONET_VERSION}}
 
