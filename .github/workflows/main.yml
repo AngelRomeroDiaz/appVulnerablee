@@ -11,7 +11,9 @@ env:
 jobs:
   analyze:
     name: Analizar Código
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+    #runs-on: ubuntu-latest
+    
     permissions:
       security-events: write
 
