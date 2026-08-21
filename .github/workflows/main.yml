@@ -22,7 +22,7 @@ jobs:
       - name: instarar .net 3.5
         uses: actions/setup-dotnet@v4
         with:
-          donet-version:${{env.DONET_VERSION}}
+          dotnet-version:${{env.DONET_VERSION}}
 
       - name: Inicializar CodeQL
         uses: github/codeql-action/init@v4
