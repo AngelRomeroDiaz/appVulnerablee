@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - PruebaReporte
-#env:
-# DONET_VERSION: '3.5.X'
+env:
+ DONET_VERSION: '3.5.X'
         
 
 jobs:
@@ -21,10 +21,10 @@ jobs:
       - name: Clonar el repositorio
         uses: actions/checkout@v4
 
-     # - name: instarar .net 3.5
-    #    uses: actions/setup-dotnet@v4
-    #    with:
-     #     dotnet-version: ${{ env.DONET_VERSION }}
+      - name: instarar .net 3.5
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DONET_VERSION }}
 
       - name: Inicializar CodeQL
         uses: github/codeql-action/init@v4
