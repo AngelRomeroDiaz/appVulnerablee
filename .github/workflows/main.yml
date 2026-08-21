@@ -21,13 +21,13 @@ jobs:
         with:
           languages: 'csharp'
 
-      # - name: Restaurar dependencias
-      #   run : dotnet restore
+      - name: Restaurar dependencias
+        run : dotnet restore
 
-      #- name: Compilar proyecto (build explícito)
-      #  run: dotnet build --configuration Release
-      - name: Autobuild de C#
-        uses: github/codeql-action/autobuild@v4
+      - name: Compilar proyecto (build explícito)
+        run: dotnet build --configuration Release
+      #- name: Autobuild de C#
+      #  uses: github/codeql-action/autobuild@v4
 
       - name: Ejecutar Análisis
         uses: github/codeql-action/analyze@v4
