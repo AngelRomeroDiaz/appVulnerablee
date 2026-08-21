@@ -5,7 +5,7 @@ on:
     branches:
       - PruebaReporte
 env:
- DONET_VERSION: '3.5.X'
+ DONET_VERSION: '3.5'
         
 
 jobs:
